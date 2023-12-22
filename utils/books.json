@@ -1,0 +1,947 @@
+{
+    "recaptcha_key": "6LdMkEkUAAAAAGd5aGH1cwku1OFyHwKYW_QUDZxm",
+    "plus_info": {
+        "amount": 499,
+        "amount_string": "$4.99",
+        "yearly_amount": 4999,
+        "yearly_amount_string": "$49.99"
+    },
+    "assets_version": "103550c4",
+    "locale": "en",
+    "cdn_host": "",
+    "version0": {
+        "version_id": "AMP"
+    },
+    "il_versions": [],
+    "il_option": false,
+    "books": {
+        "AMP": [
+            {
+                "display": "Genesis",
+                "osis": "Gen",
+                "testament": "OT",
+                "num_chapters": 50,
+                "chapters": [
+                    {
+                        "chapter": 1,
+                        "type": "heading",
+                        "content": [
+                            "The Creation"
+                        ]
+                    },
+                    {
+                        "chapter": 2,
+                        "type": "heading",
+                        "content": [
+                            "The Creation of Man and Woman"
+                        ]
+                    },
+                    {
+                        "chapter": 3,
+                        "type": "heading",
+                        "content": [
+                            "The Fall of Man"
+                        ]
+                    },
+                    {
+                        "chapter": 4,
+                        "type": "heading",
+                        "content": [
+                            "Cain and Abel"
+                        ]
+                    },
+                    {
+                        "chapter": 5,
+                        "type": "heading",
+                        "content": [
+                            "Descendants of Adam"
+                        ]
+                    },
+                    {
+                        "chapter": 6,
+                        "type": "heading",
+                        "content": [
+                            "The Corruption of Mankind"
+                        ]
+                    },
+                    {
+                        "chapter": 7,
+                        "type": "heading",
+                        "content": [
+                            "The Flood"
+                        ]
+                    },
+                    {
+                        "chapter": 8,
+                        "type": "heading",
+                        "content": [
+                            "The Flood Abates"
+                        ]
+                    },
+                    {
+                        "chapter": 9,
+                        "type": "heading",
+                        "content": [
+                            "Covenant of the Rainbow"
+                        ]
+                    },
+                    {
+                        "chapter": 10,
+                        "type": "heading",
+                        "content": [
+                            "Descendants of Noah"
+                        ]
+                    },
+                    {
+                        "chapter": 11,
+                        "type": "heading",
+                        "content": [
+                            "Universal Language, Babel, Confusion",
+                            "Descendants of Shem"
+                        ]
+                    },
+                    {
+                        "chapter": 12,
+                        "type": "heading",
+                        "content": [
+                            "Abram Journeys to Egypt"
+                        ]
+                    },
+                    {
+                        "chapter": 13,
+                        "type": "heading",
+                        "content": [
+                            "Abram and Lot"
+                        ]
+                    },
+                    {
+                        "chapter": 14,
+                        "type": "heading",
+                        "content": [
+                            "War of the Kings",
+                            "Abram and Melchizedek"
+                        ]
+                    },
+                    {
+                        "chapter": 15,
+                        "type": "heading",
+                        "content": [
+                            "Abram Promised a Son"
+                        ]
+                    },
+                    {
+                        "chapter": 16,
+                        "type": "heading",
+                        "content": [
+                            "Sarai and Hagar"
+                        ]
+                    },
+                    {
+                        "chapter": 17,
+                        "type": "heading",
+                        "content": [
+                            "Abraham and the Covenant of Circumcision"
+                        ]
+                    },
+                    {
+                        "chapter": 18,
+                        "type": "heading",
+                        "content": [
+                            "Birth of Isaac Promised"
+                        ]
+                    },
+                    {
+                        "chapter": 19,
+                        "type": "heading",
+                        "content": [
+                            "The Doom of Sodom",
+                            "Lot Is Debased"
+                        ]
+                    },
+                    {
+                        "chapter": 20,
+                        "type": "heading",
+                        "content": [
+                            "Abraham\u2019s Deception"
+                        ]
+                    },
+                    {
+                        "chapter": 21,
+                        "type": "heading",
+                        "content": [
+                            "Isaac Is Born",
+                            "Sarah Turns against Hagar",
+                            "Covenant with Abimelech"
+                        ]
+                    },
+                    {
+                        "chapter": 22,
+                        "type": "heading",
+                        "content": [
+                            "The Offering of Isaac"
+                        ]
+                    },
+                    {
+                        "chapter": 23,
+                        "type": "heading",
+                        "content": [
+                            "Death and Burial of Sarah"
+                        ]
+                    },
+                    {
+                        "chapter": 24,
+                        "type": "heading",
+                        "content": [
+                            "A Bride for Isaac",
+                            "Rebekah Is Chosen",
+                            "Isaac Marries Rebekah"
+                        ]
+                    },
+                    {
+                        "chapter": 25,
+                        "type": "heading",
+                        "content": [
+                            "Abraham\u2019s Death",
+                            "Descendants of Ishmael",
+                            "Isaac\u2019s Sons"
+                        ]
+                    },
+                    {
+                        "chapter": 26,
+                        "type": "heading",
+                        "content": [
+                            "Isaac Settles in Gerar",
+                            "Quarrel over the Wells",
+                            "Covenant with Abimelech"
+                        ]
+                    },
+                    {
+                        "chapter": 27,
+                        "type": "heading",
+                        "content": [
+                            "Jacob\u2019s Deception",
+                            "The Stolen Blessing"
+                        ]
+                    },
+                    {
+                        "chapter": 28,
+                        "type": "heading",
+                        "content": [
+                            "Jacob Is Sent Away",
+                            "Jacob\u2019s Dream"
+                        ]
+                    },
+                    {
+                        "chapter": 29,
+                        "type": "heading",
+                        "content": [
+                            "Jacob Meets Rachel",
+                            "Laban\u2019s Treachery"
+                        ]
+                    },
+                    {
+                        "chapter": 30,
+                        "type": "heading",
+                        "content": [
+                            "The Sons of Jacob",
+                            "Jacob Prospers"
+                        ]
+                    },
+                    {
+                        "chapter": 31,
+                        "type": "heading",
+                        "content": [
+                            "Jacob Leaves Secretly for Canaan",
+                            "Laban Pursues Jacob",
+                            "The Covenant of Mizpah"
+                        ]
+                    },
+                    {
+                        "chapter": 32,
+                        "type": "heading",
+                        "content": [
+                            "Jacob\u2019s Fear of Esau",
+                            "Jacob Wrestles"
+                        ]
+                    },
+                    {
+                        "chapter": 33,
+                        "type": "heading",
+                        "content": [
+                            "Jacob Meets Esau",
+                            "Jacob Settles in Shechem"
+                        ]
+                    },
+                    {
+                        "chapter": 34,
+                        "type": "heading",
+                        "content": [
+                            "The Treachery of Jacob\u2019s Sons"
+                        ]
+                    },
+                    {
+                        "chapter": 35,
+                        "type": "heading",
+                        "content": [
+                            "Jacob Moves to Bethel",
+                            "Jacob Is Named Israel",
+                            "The Sons of Israel"
+                        ]
+                    },
+                    {
+                        "chapter": 36,
+                        "type": "heading",
+                        "content": [
+                            "Esau Moves",
+                            "Descendants of Esau"
+                        ]
+                    },
+                    {
+                        "chapter": 37,
+                        "type": "heading",
+                        "content": [
+                            "Joseph\u2019s Dream",
+                            "The Plot against Joseph"
+                        ]
+                    },
+                    {
+                        "chapter": 38,
+                        "type": "heading",
+                        "content": [
+                            "Judah and Tamar"
+                        ]
+                    },
+                    {
+                        "chapter": 39,
+                        "type": "heading",
+                        "content": [
+                            "Joseph\u2019s Success in Egypt",
+                            "Joseph Imprisoned"
+                        ]
+                    },
+                    {
+                        "chapter": 40,
+                        "type": "heading",
+                        "content": [
+                            "Joseph Interprets a Dream"
+                        ]
+                    },
+                    {
+                        "chapter": 41,
+                        "type": "heading",
+                        "content": [
+                            "Pharaoh\u2019s Dream",
+                            "Joseph Interprets",
+                            "Joseph Is Made a Ruler of Egypt",
+                            "The Sons of Joseph"
+                        ]
+                    },
+                    {
+                        "chapter": 42,
+                        "type": "heading",
+                        "content": [
+                            "Joseph\u2019s Brothers Sent to Egypt",
+                            "The Return to Canaan"
+                        ]
+                    },
+                    {
+                        "chapter": 43,
+                        "type": "heading",
+                        "content": [
+                            "The Return to Egypt",
+                            "Joseph Sees Benjamin"
+                        ]
+                    },
+                    {
+                        "chapter": 44,
+                        "type": "heading",
+                        "content": [
+                            "The Brothers Are Brought Back"
+                        ]
+                    },
+                    {
+                        "chapter": 45,
+                        "type": "heading",
+                        "content": [
+                            "Joseph Shows Kindness to His Brothers"
+                        ]
+                    },
+                    {
+                        "chapter": 46,
+                        "type": "heading",
+                        "content": [
+                            "Jacob Moves to Egypt",
+                            "Those Who Came to Egypt"
+                        ]
+                    },
+                    {
+                        "chapter": 47,
+                        "type": "heading",
+                        "content": [
+                            "Jacob\u2019s Family Settles in Goshen",
+                            "Result of the Famine"
+                        ]
+                    },
+                    {
+                        "chapter": 48,
+                        "type": "heading",
+                        "content": [
+                            "Israel\u2019s Last Days"
+                        ]
+                    },
+                    {
+                        "chapter": 49,
+                        "type": "heading",
+                        "content": [
+                            "Israel\u2019s Prophecy concerning His Sons"
+                        ]
+                    },
+                    {
+                        "chapter": 50,
+                        "type": "heading",
+                        "content": [
+                            "Burial Preparations and Mourning for Jacob",
+                            "Burial at Machpelah",
+                            "Death of Joseph"
+                        ]
+                    }
+                ],
+                "intro": false
+            },
+            {
+                "display": "Exodus",
+                "osis": "Exod",
+                "testament": "OT",
+                "num_chapters": 40,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Leviticus",
+                "osis": "Lev",
+                "testament": "OT",
+                "num_chapters": 27,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Numbers",
+                "osis": "Num",
+                "testament": "OT",
+                "num_chapters": 36,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Deuteronomy",
+                "osis": "Deut",
+                "testament": "OT",
+                "num_chapters": 34,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Joshua",
+                "osis": "Josh",
+                "testament": "OT",
+                "num_chapters": 24,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Judges",
+                "osis": "Judg",
+                "testament": "OT",
+                "num_chapters": 21,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Ruth",
+                "osis": "Ruth",
+                "testament": "OT",
+                "num_chapters": 4,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "1 Samuel",
+                "osis": "1Sam",
+                "testament": "OT",
+                "num_chapters": 31,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "2 Samuel",
+                "osis": "2Sam",
+                "testament": "OT",
+                "num_chapters": 24,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "1 Kings",
+                "osis": "1Kgs",
+                "testament": "OT",
+                "num_chapters": 22,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "2 Kings",
+                "osis": "2Kgs",
+                "testament": "OT",
+                "num_chapters": 25,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "1 Chronicles",
+                "osis": "1Chr",
+                "testament": "OT",
+                "num_chapters": 29,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "2 Chronicles",
+                "osis": "2Chr",
+                "testament": "OT",
+                "num_chapters": 36,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Ezra",
+                "osis": "Ezra",
+                "testament": "OT",
+                "num_chapters": 10,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Nehemiah",
+                "osis": "Neh",
+                "testament": "OT",
+                "num_chapters": 13,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Esther",
+                "osis": "Esth",
+                "testament": "OT",
+                "num_chapters": 10,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Job",
+                "osis": "Job",
+                "testament": "OT",
+                "num_chapters": 42,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Psalm",
+                "osis": "Ps",
+                "testament": "OT",
+                "num_chapters": 150,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Proverbs",
+                "osis": "Prov",
+                "testament": "OT",
+                "num_chapters": 31,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Ecclesiastes",
+                "osis": "Eccl",
+                "testament": "OT",
+                "num_chapters": 12,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Song of Solomon",
+                "osis": "Song",
+                "testament": "OT",
+                "num_chapters": 8,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Isaiah",
+                "osis": "Isa",
+                "testament": "OT",
+                "num_chapters": 66,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Jeremiah",
+                "osis": "Jer",
+                "testament": "OT",
+                "num_chapters": 52,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Lamentations",
+                "osis": "Lam",
+                "testament": "OT",
+                "num_chapters": 5,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Ezekiel",
+                "osis": "Ezek",
+                "testament": "OT",
+                "num_chapters": 48,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Daniel",
+                "osis": "Dan",
+                "testament": "OT",
+                "num_chapters": 12,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Hosea",
+                "osis": "Hos",
+                "testament": "OT",
+                "num_chapters": 14,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Joel",
+                "osis": "Joel",
+                "testament": "OT",
+                "num_chapters": 3,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Amos",
+                "osis": "Amos",
+                "testament": "OT",
+                "num_chapters": 9,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Obadiah",
+                "osis": "Obad",
+                "testament": "OT",
+                "num_chapters": 1,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Jonah",
+                "osis": "Jonah",
+                "testament": "OT",
+                "num_chapters": 4,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Micah",
+                "osis": "Mic",
+                "testament": "OT",
+                "num_chapters": 7,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Nahum",
+                "osis": "Nah",
+                "testament": "OT",
+                "num_chapters": 3,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Habakkuk",
+                "osis": "Hab",
+                "testament": "OT",
+                "num_chapters": 3,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Zephaniah",
+                "osis": "Zeph",
+                "testament": "OT",
+                "num_chapters": 3,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Haggai",
+                "osis": "Hag",
+                "testament": "OT",
+                "num_chapters": 2,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Zechariah",
+                "osis": "Zech",
+                "testament": "OT",
+                "num_chapters": 14,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Malachi",
+                "osis": "Mal",
+                "testament": "OT",
+                "num_chapters": 4,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Matthew",
+                "osis": "Matt",
+                "testament": "NT",
+                "num_chapters": 28,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Mark",
+                "osis": "Mark",
+                "testament": "NT",
+                "num_chapters": 16,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Luke",
+                "osis": "Luke",
+                "testament": "NT",
+                "num_chapters": 24,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "John",
+                "osis": "John",
+                "testament": "NT",
+                "num_chapters": 21,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Acts",
+                "osis": "Acts",
+                "testament": "NT",
+                "num_chapters": 28,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Romans",
+                "osis": "Rom",
+                "testament": "NT",
+                "num_chapters": 16,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "1 Corinthians",
+                "osis": "1Cor",
+                "testament": "NT",
+                "num_chapters": 16,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "2 Corinthians",
+                "osis": "2Cor",
+                "testament": "NT",
+                "num_chapters": 13,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Galatians",
+                "osis": "Gal",
+                "testament": "NT",
+                "num_chapters": 6,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Ephesians",
+                "osis": "Eph",
+                "testament": "NT",
+                "num_chapters": 6,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Philippians",
+                "osis": "Phil",
+                "testament": "NT",
+                "num_chapters": 4,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Colossians",
+                "osis": "Col",
+                "testament": "NT",
+                "num_chapters": 4,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "1 Thessalonians",
+                "osis": "1Thess",
+                "testament": "NT",
+                "num_chapters": 5,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "2 Thessalonians",
+                "osis": "2Thess",
+                "testament": "NT",
+                "num_chapters": 3,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "1 Timothy",
+                "osis": "1Tim",
+                "testament": "NT",
+                "num_chapters": 6,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "2 Timothy",
+                "osis": "2Tim",
+                "testament": "NT",
+                "num_chapters": 4,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Titus",
+                "osis": "Titus",
+                "testament": "NT",
+                "num_chapters": 3,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Philemon",
+                "osis": "Phlm",
+                "testament": "NT",
+                "num_chapters": 1,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Hebrews",
+                "osis": "Heb",
+                "testament": "NT",
+                "num_chapters": 13,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "James",
+                "osis": "Jas",
+                "testament": "NT",
+                "num_chapters": 5,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "1 Peter",
+                "osis": "1Pet",
+                "testament": "NT",
+                "num_chapters": 5,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "2 Peter",
+                "osis": "2Pet",
+                "testament": "NT",
+                "num_chapters": 3,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "1 John",
+                "osis": "1John",
+                "testament": "NT",
+                "num_chapters": 5,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "2 John",
+                "osis": "2John",
+                "testament": "NT",
+                "num_chapters": 1,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "3 John",
+                "osis": "3John",
+                "testament": "NT",
+                "num_chapters": 1,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Jude",
+                "osis": "Jude",
+                "testament": "NT",
+                "num_chapters": 1,
+                "chapters": null,
+                "intro": false
+            },
+            {
+                "display": "Revelation",
+                "osis": "Rev",
+                "testament": "NT",
+                "num_chapters": 22,
+                "chapters": null,
+                "intro": false
+            }
+        ]
+    },
+    "passage_displays": [
+        "Genesis 2"
+    ],
+    "featured_resources": [
+        "niv-cultural-backgrounds",
+        "nidntt",
+        "zondervan-illustrated-bible-dictionary",
+        "vines-expository-bible"
+    ],
+    "translations": [
+        "AMP"
+    ],
+    "osis": "Gen.2/amp",
+    "osis_w_verse": "Gen.2.1-Gen.2.ff/amp"
+}
