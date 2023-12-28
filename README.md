@@ -1,6 +1,9 @@
 # bible-scraper
 Scrapes biblical scriptures from https://www.biblegateway.com/
 
+# Settings
+Use settings.ini file in settings directory to configure the version to be scraped. Take a look at the mappings.json for the version and version id values.
+
 # Usage
 Requires python 3.10+
 

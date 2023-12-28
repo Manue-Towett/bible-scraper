@@ -7,6 +7,7 @@ import re
 import argparse
 import threading
 import dataclasses
+import configparser
 from queue import Queue
 from datetime import date
 from typing import Optional, Tuple
@@ -17,6 +18,13 @@ from bs4 import BeautifulSoup, ResultSet
 from requests.adapters import HTTPAdapter, Retry
 
 from utils import Logger, VERSIONS, BOOKS
+
+config = configparser.ConfigParser()
+
+with open("./settings/settings.ini", "r") as file:
+    config.read_file(file)
+
+VERSION = config.get("version to scrape", "version_id")
 
 THREAD_NUM = 20
 
@@ -66,7 +74,7 @@ class BibleGatewayScraper:
         self.verses_found = 0
         self.headers_added = False
         self.include_html = include_html
-        self.__file_name = f"biblegateway_results_{date.today()}.csv"
+        self.__file_name = f"{date.today()}.csv"
     
     def __process_request(self, s: requests.Session, params: dict[str, str]) -> Optional[BeautifulSoup]:
         """Make a request to the website and return BeautifulSoup object of the response"""
@@ -140,9 +148,16 @@ class BibleGatewayScraper:
 
     def __create_work(self, chapters: int) -> None:
         """Creates work to be done by threads"""
-        items = VERSIONS.items()
+        items = None
 
-        [self.queue.put((v, v_id, n + 1)) for v, v_id in items for n in range(chapters)]
+        for key, value in VERSIONS.items():
+            if re.search(rf"{VERSION}", value, re.I):
+                items = [(key, value)]
+
+        if items is None:
+            self.logger.error("Couldn't find the version specified in settings!", True)
+
+        [self.queue.put((v, v_id, n + 1)) for n in range(chapters) for v, v_id in items]
 
         self.queue.join() 
 
@@ -194,7 +209,7 @@ class BibleGatewayScraper:
 
                 self.verses_found += 1
 
-                if len(self.verses) % 200 == 0: 
+                if len(self.verses) % 100 == 0: 
                     verses = self.verses[:]
 
                     self.save_queue.put(verses)
@@ -202,6 +217,8 @@ class BibleGatewayScraper:
                     [self.verses.remove(i) for i in verses]
 
                     del verses
+
+                    self.save_queue.join()
             
             bible_verses.append("")
 
@@ -211,9 +228,9 @@ class BibleGatewayScraper:
             
             self.logger.info(f"Queue: {queue} || Crawled: {crawled} || Verses Found: {self.verses_found}")
 
-    def __save(self) -> None:
+    def __save(self, book: str) -> None:
         """Saves data retrieved to a csv file"""
-        file_name = f"{OUTPUT_PATH}{self.__file_name}"
+        __file_name = f"{book}_{self.__file_name}"
 
         while True:
             bible_verses: list[BibleVerse] = self.save_queue.get()
@@ -225,6 +242,12 @@ class BibleGatewayScraper:
             df = pd.DataFrame(results)
 
             df.rename(columns=COLUMN_MAPPINGS, inplace=True)
+
+            df.sort_values(by=["Chapter"], inplace=True)
+
+            version_id = df.iloc[0]["ID"]
+
+            file_name = "{}{}_{}".format(OUTPUT_PATH, version_id, __file_name)
 
             if not self.headers_added:
                 df.to_csv(file_name, index=False, chunksize=20)
@@ -261,7 +284,7 @@ class BibleGatewayScraper:
                           args=(search_term, bible_verses,), 
                           daemon=True).start() for _ in range(THREAD_NUM)]
         
-        threading.Thread(target=self.__save, daemon=True).start()
+        threading.Thread(target=self.__save, args=(book,), daemon=True).start()
 
         self.__create_work(num_chapters)
 
