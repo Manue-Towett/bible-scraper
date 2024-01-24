@@ -50,5 +50,5 @@ BibleGatewayScraper:INFO - Queue: 2 || Crawled: 48 || Verses Found: 48
 BibleGatewayScraper:INFO - Queue: 1 || Crawled: 49 || Verses Found: 49
 BibleGatewayScraper:INFO - Queue: 0 || Crawled: 50 || Verses Found: 50
 BibleGatewayScraper:INFO - Saving data retrieved...
-BibleGatewayScraper:INFO - 50 records saved to 2023-12-28.csv
+BibleGatewayScraper:INFO - 50 records saved to 2024-01-24.xlsx
 BibleGatewayScraper:INFO - Scraper done scraping all the genesis chapters.

@@ -4,6 +4,7 @@ eventlet.monkey_patch(thread=True, socket=True)
 
 import os
 import re
+import csv
 import argparse
 import threading
 import dataclasses
@@ -74,12 +75,12 @@ class BibleGatewayScraper:
         self.verses_found = 0
         self.headers_added = False
         self.include_html = include_html
-        self.__file_name = f"{date.today()}.csv"
+        self.__file_name = f"{date.today()}.xlsx"
     
     def __process_request(self, s: requests.Session, params: dict[str, str]) -> Optional[BeautifulSoup]:
         """Make a request to the website and return BeautifulSoup object of the response"""
         
-        with eventlet.Timeout(5):
+        with eventlet.Timeout(30):
             response = s.get(URL, headers=HEADERS, params=params, timeout=3)
 
             if response.ok:
@@ -153,6 +154,8 @@ class BibleGatewayScraper:
         for key, value in VERSIONS.items():
             if re.search(rf"{VERSION}", value, re.I):
                 items = [(key, value)]
+
+                break
 
         if items is None:
             self.logger.error("Couldn't find the version specified in settings!", True)
@@ -250,12 +253,12 @@ class BibleGatewayScraper:
             file_name = "{}{}_{}".format(OUTPUT_PATH, version_id, __file_name)
 
             if not self.headers_added:
-                df.to_csv(file_name, index=False, chunksize=20)
+                df.to_excel(file_name, index=False)
 
                 self.headers_added = True
 
             else:
-                df.to_csv(file_name, index=False, header=False, mode="a", chunksize=20)
+                df.to_excel(file_name, index=False, header=False, mode="a")
 
             self.logger.info(f"{len(df)} records saved to {self.__file_name}")
 
