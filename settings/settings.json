@@ -1,0 +1,44 @@
+[
+    {
+        "tag": "div",
+        "attrs": {
+            "class": "crossrefs hidden"
+        },
+        "actions": ["remove"]
+    },
+    {
+        "tag": "sup",
+        "attrs": {
+            "class": "crossreference"
+        },
+        "actions": ["remove"]
+    },
+    {
+        "tag": "a",
+        "attrs": {
+            "href": "#cen-NIV-32A",
+            "title": "See cross-reference A"
+        },
+        "actions": ["rename", "changeAttrs"],
+        "newTagName": "span",
+        "attrsToChange": {
+            "class": "my class",
+            "id": "my id"
+        }
+    },
+    {
+        "tag": "div",
+        "attrs": {
+            "class": "crossrefs hidden"
+        },
+        "actions": ["stripTags"]
+    },
+    {
+        "tag": "div",
+        "attrs": {
+            "class": "version-NIV result-text-style-normal text-html"
+        },
+        "actions": ["removeAttr"],
+        "attrsToRemove": ["class", "id", "title"]
+    }
+]

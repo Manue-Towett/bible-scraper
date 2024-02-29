@@ -4,7 +4,7 @@ eventlet.monkey_patch(thread=True, socket=True)
 
 import os
 import re
-import csv
+import json
 import argparse
 import threading
 import dataclasses
@@ -15,7 +15,7 @@ from typing import Optional, Tuple
 
 import requests
 import pandas as pd
-from bs4 import BeautifulSoup, ResultSet
+from bs4 import BeautifulSoup, ResultSet, Tag
 from requests.adapters import HTTPAdapter, Retry
 
 from utils import Logger, VERSIONS, BOOKS
@@ -25,11 +25,14 @@ config = configparser.ConfigParser()
 with open("./settings/settings.ini", "r") as file:
     config.read_file(file)
 
+with open("./settings/settings.json", "r") as file:
+    TAG_SETTINGS = json.load(file)
+
 VERSION = config.get("version to scrape", "version_id")
 
 THREAD_NUM = 20
 
-OUTPUT_PATH = "./data/"
+OUTPUT_PATH = "./data/csv/"
 
 PARSER = argparse.ArgumentParser(description="Html scraping decision")
 
@@ -52,6 +55,8 @@ HEADERS = {
 
 URL = "https://www.biblegateway.com/passage"
 
+pd.set_option('display.max_colwidth', None)
+
 @dataclasses.dataclass
 class BibleVerse:
     version: str
@@ -73,9 +78,11 @@ class BibleGatewayScraper:
         
         self.verses = []
         self.verses_found = 0
-        self.headers_added = False
+        self.headers_added = []
+        self.file_saving = False
         self.include_html = include_html
-        self.__file_name = f"{date.today()}.xlsx"
+        self.__file_name = f"{date.today()}.csv"
+        self.__html_filename = f"{date.today()}.html"
     
     def __process_request(self, s: requests.Session, params: dict[str, str]) -> Optional[BeautifulSoup]:
         """Make a request to the website and return BeautifulSoup object of the response"""
@@ -92,6 +99,12 @@ class BibleGatewayScraper:
         for book_dict in BOOKS["books"]["AMP"]:
             if re.search(book, book_dict["display"], re.I):
                 return book_dict["display"], book_dict["num_chapters"]
+    
+    @staticmethod
+    def __get_books() -> dict[str, int]:
+        """Gets the search term corresponding to a given biblical book"""
+        return {book_dict["display"]: book_dict["num_chapters"]
+                for book_dict in BOOKS["books"]["AMP"]}
     
     @staticmethod
     def __get_verse_text(span_tags: ResultSet[BeautifulSoup], verse: str) -> str:
@@ -132,7 +145,16 @@ class BibleGatewayScraper:
         verse.chapter_title = chapter_title
 
         if self.include_html:
+            book_fmt = '_'.join(verse.book.split(" "))
+            html_file_name = f"./data/html/{abbr}_{book_fmt}_{verse.chapter}_{self.__html_filename}"
             content = passage_tag.select_one("div.text-html")
+
+            self.__process_html(content)
+
+            with open(html_file_name, "w", encoding="utf-8") as file:
+                file.write(content.__repr__())
+
+                content = html_file_name.split("/")[-1]
         else:
             chapter_tag = passage_tag.select_one("span.chapternum")
 
@@ -146,8 +168,47 @@ class BibleGatewayScraper:
                 content = self.__get_verse_text(span_tags, content)
         
         verse.content = content.encode("ascii", errors="ignore").decode()
+    
+    @staticmethod
+    def __process_html(html: Tag) -> str:
+        for tag in TAG_SETTINGS:
+            soup_tags: ResultSet[Tag] = []
 
-    def __create_work(self, chapters: int) -> None:
+            if tag["tag"] == html.name: soup_tags.append(html)
+            
+            soup_tags.extend(html.select(tag["tag"]))
+                
+            for html_tag in soup_tags:
+                for attr, value in tag["attrs"].items():
+                    if not html_tag.attrs.get(attr): continue
+
+                    for val in value.split(" "):
+                        found = False
+
+                        found = True if  val in html_tag.attrs[attr] else found
+                                                
+                    if found: 
+                        if "remove" in tag["actions"]:
+                            html_tag.decompose()
+
+                            break
+                        elif "stripTags" in tag["actions"]:
+                            html_tag.unwrap()
+
+                            break
+                        
+                        if "changeAttrs" in tag["actions"]:
+                            for new_attr, new_value in tag["attrsToChange"].items():
+                                html_tag.attrs[new_attr] = new_value
+                        
+                        if "rename" in tag["actions"]:
+                            html_tag.name = tag["newTagName"]
+                        
+                        if "removeAttr" in tag["actions"]:
+                            html_tag.attrs = {k:v for k, v in html_tag.attrs.items() 
+                                              if not k in tag["attrsToRemove"]}
+
+    def __create_work(self, book: str, bible_verses: list, __file_name: str, chapters: int) -> None:
         """Creates work to be done by threads"""
         items = None
 
@@ -160,7 +221,8 @@ class BibleGatewayScraper:
         if items is None:
             self.logger.error("Couldn't find the version specified in settings!", True)
 
-        [self.queue.put((v, v_id, n + 1)) for n in range(chapters) for v, v_id in items]
+        [self.queue.put((book, bible_verses, __file_name, v, v_id, n + 1)) 
+         for n in range(chapters) for v, v_id in items]
 
         self.queue.join() 
 
@@ -177,12 +239,12 @@ class BibleGatewayScraper:
 
         return s         
     
-    def __work(self, book: str, bible_verses: list ) -> None:
+    def __work(self) -> None:
         """Work to be done by the threads"""
         s = self.__get_session()
 
         while True:
-            version, version_id, chapter = self.queue.get()
+            book, bible_verses, __file_name, version, version_id, chapter = self.queue.get()
 
             params = {"search": f"{book} {chapter}", "version": version_id}
 
@@ -215,13 +277,11 @@ class BibleGatewayScraper:
                 if len(self.verses) % 100 == 0: 
                     verses = self.verses[:]
 
-                    self.save_queue.put(verses)
+                    self.__save(verses, __file_name)
 
                     [self.verses.remove(i) for i in verses]
 
                     del verses
-
-                    self.save_queue.join()
             
             bible_verses.append("")
 
@@ -231,80 +291,85 @@ class BibleGatewayScraper:
             
             self.logger.info(f"Queue: {queue} || Crawled: {crawled} || Verses Found: {self.verses_found}")
 
-    def __save(self, book: str) -> None:
-        """Saves data retrieved to a csv file"""
-        __file_name = f"{book}_{self.__file_name}"
+    def __save(self, bible_verses: list[BibleVerse], __file_name: str) -> None:
+        """Saves data retrieved to an excel file"""
+        while self.file_saving: pass
 
-        while True:
-            bible_verses: list[BibleVerse] = self.save_queue.get()
+        self.file_saving = True
 
-            self.logger.info("Saving data retrieved...")
+        self.logger.info("Saving data retrieved...")
 
-            results = [dataclasses.asdict(verse) for verse in bible_verses]
+        results = [dataclasses.asdict(verse) for verse in bible_verses]
 
-            df = pd.DataFrame(results)
+        df = pd.DataFrame(results)
 
-            df.rename(columns=COLUMN_MAPPINGS, inplace=True)
+        df.rename(columns=COLUMN_MAPPINGS, inplace=True)
 
-            df.sort_values(by=["Chapter"], inplace=True)
+        df.sort_values(by=["Chapter"], inplace=True)
 
-            version_id = df.iloc[0]["ID"]
+        version_id = df.iloc[0]["ID"]
 
-            file_name = "{}{}_{}".format(OUTPUT_PATH, version_id, __file_name)
+        file_name = "{}{}_{}".format(OUTPUT_PATH, version_id, __file_name)
 
-            if not self.headers_added:
-                df.to_excel(file_name, index=False)
+        if not __file_name in self.headers_added:
+            df.to_csv(file_name, index=False)
 
-                self.headers_added = True
+            self.headers_added.append(__file_name)
 
-            else:
-                df.to_excel(file_name, index=False, header=False, mode="a")
+        else:
+            df.to_csv(file_name, index=False, header=False, mode="a")
 
-            self.logger.info(f"{len(df)} records saved to {self.__file_name}")
+        self.logger.info(f"{len(df)} records saved to {file_name}")
 
-            self.save_queue.task_done()
+        del df
 
-            del df
+        del results
 
-            del results
-
-    def scrape(self, book: str) -> None:
-        """Entry point to the scraper"""
-        if not os.path.exists(OUTPUT_PATH): os.makedirs(OUTPUT_PATH)
+        self.file_saving = False
+    
+    def __scrape_book(self, search_term: str, num_chapters: int) -> None:
+        __file_name = f"{self.__file_name}"
 
         bible_verses = []
 
-        search_args = self.__get_book(book)
-
-        search_term, num_chapters = search_args if search_args is not None else (None, None)
-        
-        if search_term is None:
-            self.logger.error(f"Failed to find chapter named <{book}>", True)
-
-        search_term = book if search_term is None else search_term
-
         [threading.Thread(target=self.__work, 
-                          args=(search_term, bible_verses,), 
                           daemon=True).start() for _ in range(THREAD_NUM)]
         
-        threading.Thread(target=self.__save, args=(book,), daemon=True).start()
-
-        self.__create_work(num_chapters)
+        self.__create_work(search_term, bible_verses, __file_name, num_chapters)
 
         if len(self.verses):
-            self.save_queue.put(self.verses)
+            self.__save(self.verses, __file_name)
+        
+        self.verses = []
 
-            self.save_queue.join()
+        self.logger.info(f"Scraper done scraping all the {search_term} chapters.")
 
-        self.logger.info(f"Scraper done scraping all the {book} chapters.")
+    def scrape(self, book: str|None) -> None:
+        """Entry point to the scraper"""
+        if not os.path.exists(OUTPUT_PATH): os.makedirs(OUTPUT_PATH)
 
-PARSER.add_argument("chapter", type=str, nargs="+")
+        if not book:
+            search_books_dict = self.__get_books()
 
-PARSER.add_argument("--html", dest="html", const="yes", default="no", action="store_const")
+            [self.__scrape_book(k, v) for k, v in search_books_dict.items()]
+        else:
+            search_args = self.__get_book(book)
+
+            search_term, num_chapters = search_args if search_args is not None else (None, None)
+            
+            if search_term is None:
+                self.logger.error(f"Failed to find chapter named <{book}>", True)
+
+            search_term = book if search_term is None else search_term
+
+            self.__scrape_book(search_term, num_chapters)
+
+PARSER.add_argument("-b", "--book", type=str, nargs="+")
+
+PARSER.add_argument("-hml", "--html", action="store_true")
 
 if __name__ == "__main__":
     args = PARSER.parse_args()
-    html_decision = True if args.html == "yes" else False
 
-    app = BibleGatewayScraper(html_decision)
-    app.scrape(" ".join(args.chapter))
+    app = BibleGatewayScraper(args.html)
+    app.scrape(" ".join(args.book) if args.book else None)

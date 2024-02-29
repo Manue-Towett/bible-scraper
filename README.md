@@ -20,23 +20,24 @@ Run the script using the command:
 For linux/mac:
 
     Without Html:
-
-        python3 main.py <chapter> e.g python3 main.py genesis
+        
+        single book:
+            python3 main.py -b <book> e.g python3 main.py -b genesis
     
     With Html:
 
         - include the argument "--html"
 
-        eg python3 main.py genesis --html
+        eg python3 main.py -b genesis --html
 
 For windows:
 
     Without Html:
 
-        python main.py <chapter> e.g python main.py genesis
+        python main.py -b <chapter> e.g python main.py -b genesis
     
     With Html:
 
         - include the argument "--html"
 
-        eg python main.py genesis --html
+        eg python main.py -b genesis --html
