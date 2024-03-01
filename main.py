@@ -179,34 +179,45 @@ class BibleGatewayScraper:
             soup_tags.extend(html.select(tag["tag"]))
                 
             for html_tag in soup_tags:
+                if not len(tag["attrs"]): found = True
+                
                 for attr, value in tag["attrs"].items():
                     if not html_tag.attrs.get(attr): continue
 
                     for val in value.split(" "):
                         found = False
 
-                        found = True if  val in html_tag.attrs[attr] else found
-                                                
-                    if found: 
-                        if "remove" in tag["actions"]:
-                            html_tag.decompose()
-
-                            break
-                        elif "stripTags" in tag["actions"]:
-                            html_tag.unwrap()
-
-                            break
-                        
-                        if "changeAttrs" in tag["actions"]:
+                        if "changeAttrWildcard" in tag["actions"] and "(.*)" in val:
+                            if re.search(rf"{val}", ' '.join(html_tag.attrs[attr]), re.I):
+                                wildcard = re.search(rf"{val}", ' '.join(html_tag.attrs[attr]), re.I).group(1)
+                            
                             for new_attr, new_value in tag["attrsToChange"].items():
-                                html_tag.attrs[new_attr] = new_value
-                        
-                        if "rename" in tag["actions"]:
-                            html_tag.name = tag["newTagName"]
-                        
-                        if "removeAttr" in tag["actions"]:
-                            html_tag.attrs = {k:v for k, v in html_tag.attrs.items() 
-                                              if not k in tag["attrsToRemove"]}
+                                html_tag.attrs[new_attr] = new_value.format(wildcard)
+
+                        found = True if  val in html_tag.attrs[attr] else found
+
+                        if not found: break
+                                                
+                if found: 
+                    if "remove" in tag["actions"]:
+                        html_tag.decompose()
+
+                        continue
+                    elif "stripTags" in tag["actions"]:
+                        html_tag.unwrap()
+
+                        continue
+                    
+                    if "changeAttrs" in tag["actions"]:
+                        for new_attr, new_value in tag["attrsToChange"].items():
+                            html_tag.attrs[new_attr] = new_value
+                    
+                    if "rename" in tag["actions"]:
+                        html_tag.name = tag["newTagName"]
+                    
+                    if "removeAttr" in tag["actions"]:
+                        html_tag.attrs = {k:v for k, v in html_tag.attrs.items() 
+                                            if not k in tag["attrsToRemove"]}
 
     def __create_work(self, book: str, bible_verses: list, __file_name: str, chapters: int) -> None:
         """Creates work to be done by threads"""

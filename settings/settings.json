@@ -40,5 +40,15 @@
         },
         "actions": ["removeAttr"],
         "attrsToRemove": ["class", "id", "title"]
+    },
+    {
+        "tag": "span",
+        "attrs": {
+            "class": "text Gen(.*)"
+        },
+        "actions": ["changeAttrWildcard"],
+        "attrsToChange": {
+            "id": "Gen{}"
+        }
     }
 ]
