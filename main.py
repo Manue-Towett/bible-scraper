@@ -191,8 +191,8 @@ class BibleGatewayScraper:
                             if re.search(rf"{val}", ' '.join(html_tag.attrs[attr]), re.I):
                                 wildcard = re.search(rf"{val}", ' '.join(html_tag.attrs[attr]), re.I).group(1)
                             
-                            for new_attr, new_value in tag["attrsToChange"].items():
-                                html_tag.attrs[new_attr] = new_value.format(wildcard)
+                                for new_attr, new_value in tag["attrsToChange"].items():
+                                    html_tag.attrs[new_attr] = new_value.format(wildcard)
 
                         found = True if  val in html_tag.attrs[attr] else found
 

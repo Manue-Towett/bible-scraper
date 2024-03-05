@@ -8,6 +8,8 @@ from typing import Optional, Tuple
 import pandas as pd
 from bs4 import BeautifulSoup
 
+from utils import VERSIONS
+
 QUEUE = Queue()
 
 MERGED_OUTPUT_PATH = "./data/merged/"
@@ -114,16 +116,23 @@ def groupby_book(verses: list[list[BibleVerse]]) -> dict[str, list[BibleVerse]]:
     return grouped_verses
 
 def process_grouped_verses(chapter_verses: list[BibleVerse], html_path: str) -> Tuple[str, str]:
-    options, content = '', ''
+    options, content, crawled = '', '', []
 
-    for verse in chapter_verses:
-        options += f"{create_option(verse=verse)}"
+    for mapping_verse in VERSIONS.values():
+        for verse in chapter_verses:
+            if verse.version_id != mapping_verse or verse.version_id in crawled: continue
 
-        html = read_html(f"{html_path}{verse.content}")
+            options += f"{create_option(verse=verse)}"
 
-        version_content = create_version_content(verse=verse, html=html)
+            html = read_html(f"{html_path}{verse.content}")
 
-        content += f"{version_content}"
+            version_content = create_version_content(verse=verse, html=html)
+
+            content += f"{version_content}"
+
+            crawled.append(verse.version_id)
+
+            break
 
     return options, content
 
@@ -173,4 +182,4 @@ def run(csv_path: str, html_path: str) -> None:
 if __name__ == "__main__":
     args = PARSER.parse_args()
 
-    run(' '.join(args.csv_path), ' '.join(args.html_path))
+    run(''.join(args.csv_path), ''.join(args.html_path))
