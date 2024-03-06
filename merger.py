@@ -1,4 +1,5 @@
 import os
+import json
 import argparse
 import threading
 import dataclasses
@@ -8,7 +9,8 @@ from typing import Optional, Tuple
 import pandas as pd
 from bs4 import BeautifulSoup
 
-from utils import VERSIONS
+with open("./settings/options-order.json") as f:
+    VERSIONS = json.load(f)
 
 QUEUE = Queue()
 
@@ -118,7 +120,7 @@ def groupby_book(verses: list[list[BibleVerse]]) -> dict[str, list[BibleVerse]]:
 def process_grouped_verses(chapter_verses: list[BibleVerse], html_path: str) -> Tuple[str, str]:
     options, content, crawled = '', '', []
 
-    for mapping_verse in VERSIONS.values():
+    for mapping_verse in VERSIONS:
         for verse in chapter_verses:
             if verse.version_id != mapping_verse or verse.version_id in crawled: continue
 

@@ -169,14 +169,15 @@ class BibleGatewayScraper:
         
         verse.content = content.encode("ascii", errors="ignore").decode()
     
-    @staticmethod
-    def __process_html(html: Tag) -> str:
+    def __process_html(self, html: Tag) -> str:
         for tag in TAG_SETTINGS:
             soup_tags: ResultSet[Tag] = []
 
             if tag["tag"] == html.name: soup_tags.append(html)
             
             soup_tags.extend(html.select(tag["tag"]))
+
+            found, tag_found = False, False
                 
             for html_tag in soup_tags:
                 if not len(tag["attrs"]): found = True
@@ -218,6 +219,9 @@ class BibleGatewayScraper:
                     if "removeAttr" in tag["actions"]:
                         html_tag.attrs = {k:v for k, v in html_tag.attrs.items() 
                                             if not k in tag["attrsToRemove"]}
+            
+            if not tag_found: 
+                self.logger.warn(f"{tag['tag']} {tag['attrs']} not found")
 
     def __create_work(self, book: str, bible_verses: list, __file_name: str, chapters: int) -> None:
         """Creates work to be done by threads"""
