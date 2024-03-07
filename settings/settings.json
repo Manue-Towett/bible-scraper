@@ -44,11 +44,11 @@
     {
         "tag": "span",
         "attrs": {
-            "class": "text Gen(.*)"
+            "class": "text Gen-(.*)"
         },
         "actions": ["changeAttrWildcard"],
         "attrsToChange": {
-            "id": "Gen{}"
+            "id": "{}"
         }
     }
 ]

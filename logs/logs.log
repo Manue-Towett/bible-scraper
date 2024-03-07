@@ -4,281 +4,301 @@ BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 39 || Crawled: 1 || Verses Found: 1
+BibleGatewayScraper:INFO - Queue: 49 || Crawled: 1 || Verses Found: 1
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 38 || Crawled: 2 || Verses Found: 2
+BibleGatewayScraper:INFO - Queue: 48 || Crawled: 2 || Verses Found: 2
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 37 || Crawled: 3 || Verses Found: 3
+BibleGatewayScraper:INFO - Queue: 47 || Crawled: 3 || Verses Found: 3
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 36 || Crawled: 4 || Verses Found: 4
+BibleGatewayScraper:INFO - Queue: 46 || Crawled: 4 || Verses Found: 4
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 35 || Crawled: 5 || Verses Found: 5
+BibleGatewayScraper:INFO - Queue: 45 || Crawled: 5 || Verses Found: 5
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 34 || Crawled: 6 || Verses Found: 6
+BibleGatewayScraper:INFO - Queue: 44 || Crawled: 6 || Verses Found: 6
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 33 || Crawled: 7 || Verses Found: 7
+BibleGatewayScraper:INFO - Queue: 43 || Crawled: 7 || Verses Found: 7
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 32 || Crawled: 8 || Verses Found: 8
+BibleGatewayScraper:INFO - Queue: 42 || Crawled: 8 || Verses Found: 8
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 31 || Crawled: 9 || Verses Found: 9
+BibleGatewayScraper:INFO - Queue: 41 || Crawled: 9 || Verses Found: 9
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 30 || Crawled: 10 || Verses Found: 10
+BibleGatewayScraper:INFO - Queue: 40 || Crawled: 10 || Verses Found: 10
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 29 || Crawled: 11 || Verses Found: 11
+BibleGatewayScraper:INFO - Queue: 39 || Crawled: 11 || Verses Found: 11
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 28 || Crawled: 12 || Verses Found: 12
+BibleGatewayScraper:INFO - Queue: 38 || Crawled: 12 || Verses Found: 12
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 27 || Crawled: 13 || Verses Found: 13
+BibleGatewayScraper:INFO - Queue: 37 || Crawled: 13 || Verses Found: 13
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 26 || Crawled: 14 || Verses Found: 14
+BibleGatewayScraper:INFO - Queue: 36 || Crawled: 14 || Verses Found: 14
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 25 || Crawled: 15 || Verses Found: 15
+BibleGatewayScraper:INFO - Queue: 35 || Crawled: 15 || Verses Found: 15
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 24 || Crawled: 16 || Verses Found: 16
+BibleGatewayScraper:INFO - Queue: 34 || Crawled: 16 || Verses Found: 16
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 23 || Crawled: 17 || Verses Found: 17
+BibleGatewayScraper:INFO - Queue: 33 || Crawled: 17 || Verses Found: 17
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 22 || Crawled: 18 || Verses Found: 18
+BibleGatewayScraper:INFO - Queue: 32 || Crawled: 18 || Verses Found: 18
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 21 || Crawled: 19 || Verses Found: 19
+BibleGatewayScraper:INFO - Queue: 31 || Crawled: 19 || Verses Found: 19
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 20 || Crawled: 20 || Verses Found: 20
+BibleGatewayScraper:INFO - Queue: 30 || Crawled: 20 || Verses Found: 20
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 19 || Crawled: 21 || Verses Found: 21
+BibleGatewayScraper:INFO - Queue: 29 || Crawled: 21 || Verses Found: 21
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 18 || Crawled: 22 || Verses Found: 22
+BibleGatewayScraper:INFO - Queue: 28 || Crawled: 22 || Verses Found: 22
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 17 || Crawled: 23 || Verses Found: 23
+BibleGatewayScraper:INFO - Queue: 27 || Crawled: 23 || Verses Found: 23
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 16 || Crawled: 24 || Verses Found: 24
+BibleGatewayScraper:INFO - Queue: 26 || Crawled: 24 || Verses Found: 24
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 15 || Crawled: 25 || Verses Found: 25
+BibleGatewayScraper:INFO - Queue: 25 || Crawled: 25 || Verses Found: 25
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 14 || Crawled: 26 || Verses Found: 26
+BibleGatewayScraper:INFO - Queue: 24 || Crawled: 26 || Verses Found: 26
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 13 || Crawled: 27 || Verses Found: 27
+BibleGatewayScraper:INFO - Queue: 23 || Crawled: 27 || Verses Found: 27
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 12 || Crawled: 28 || Verses Found: 28
+BibleGatewayScraper:INFO - Queue: 22 || Crawled: 28 || Verses Found: 28
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 11 || Crawled: 29 || Verses Found: 29
+BibleGatewayScraper:INFO - Queue: 21 || Crawled: 29 || Verses Found: 29
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 10 || Crawled: 30 || Verses Found: 30
+BibleGatewayScraper:INFO - Queue: 20 || Crawled: 30 || Verses Found: 30
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 9 || Crawled: 31 || Verses Found: 31
+BibleGatewayScraper:INFO - Queue: 19 || Crawled: 31 || Verses Found: 31
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 8 || Crawled: 32 || Verses Found: 32
+BibleGatewayScraper:INFO - Queue: 18 || Crawled: 32 || Verses Found: 32
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 7 || Crawled: 33 || Verses Found: 33
+BibleGatewayScraper:INFO - Queue: 17 || Crawled: 33 || Verses Found: 33
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 6 || Crawled: 34 || Verses Found: 34
+BibleGatewayScraper:INFO - Queue: 16 || Crawled: 34 || Verses Found: 34
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 5 || Crawled: 35 || Verses Found: 35
+BibleGatewayScraper:INFO - Queue: 15 || Crawled: 35 || Verses Found: 35
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 4 || Crawled: 36 || Verses Found: 36
+BibleGatewayScraper:INFO - Queue: 14 || Crawled: 36 || Verses Found: 36
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 3 || Crawled: 37 || Verses Found: 37
+BibleGatewayScraper:INFO - Queue: 13 || Crawled: 37 || Verses Found: 37
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 2 || Crawled: 38 || Verses Found: 38
+BibleGatewayScraper:INFO - Queue: 12 || Crawled: 38 || Verses Found: 38
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 1 || Crawled: 39 || Verses Found: 39
+BibleGatewayScraper:INFO - Queue: 11 || Crawled: 39 || Verses Found: 39
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
 BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
 BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
 BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
-BibleGatewayScraper:WARNING - span {'class': 'text Gen(.*)'} not found
-BibleGatewayScraper:INFO - Queue: 0 || Crawled: 40 || Verses Found: 40
+BibleGatewayScraper:INFO - Queue: 10 || Crawled: 40 || Verses Found: 40
+BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
+BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
+BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
+BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
+BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
+BibleGatewayScraper:INFO - Queue: 9 || Crawled: 41 || Verses Found: 41
+BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
+BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
+BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
+BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
+BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
+BibleGatewayScraper:INFO - Queue: 8 || Crawled: 42 || Verses Found: 42
+BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
+BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
+BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
+BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
+BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
+BibleGatewayScraper:INFO - Queue: 7 || Crawled: 43 || Verses Found: 43
+BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
+BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
+BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
+BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
+BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
+BibleGatewayScraper:INFO - Queue: 6 || Crawled: 44 || Verses Found: 44
+BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
+BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
+BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
+BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
+BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
+BibleGatewayScraper:INFO - Queue: 5 || Crawled: 45 || Verses Found: 45
+BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
+BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
+BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
+BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
+BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
+BibleGatewayScraper:INFO - Queue: 4 || Crawled: 46 || Verses Found: 46
+BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
+BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
+BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
+BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
+BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
+BibleGatewayScraper:INFO - Queue: 3 || Crawled: 47 || Verses Found: 47
+BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
+BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
+BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
+BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
+BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
+BibleGatewayScraper:INFO - Queue: 2 || Crawled: 48 || Verses Found: 48
+BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
+BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
+BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
+BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
+BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
+BibleGatewayScraper:INFO - Queue: 1 || Crawled: 49 || Verses Found: 49
+BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
+BibleGatewayScraper:WARNING - sup {'class': 'crossreference'} not found
+BibleGatewayScraper:WARNING - a {'href': '#cen-NIV-32A', 'title': 'See cross-reference A'} not found
+BibleGatewayScraper:WARNING - div {'class': 'crossrefs hidden'} not found
+BibleGatewayScraper:WARNING - div {'class': 'version-NIV result-text-style-normal text-html'} not found
+BibleGatewayScraper:INFO - Queue: 0 || Crawled: 50 || Verses Found: 50
 BibleGatewayScraper:INFO - Saving data retrieved...
-BibleGatewayScraper:INFO - 40 records saved to ./data/csv/NIV_2024-03-06.csv
-BibleGatewayScraper:INFO - Scraper done scraping all the Exodus chapters.
+BibleGatewayScraper:INFO - 50 records saved to ./data/csv/KJV_2024-03-07.csv
+BibleGatewayScraper:INFO - Scraper done scraping all the Genesis chapters.

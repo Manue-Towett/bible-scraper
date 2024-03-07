@@ -185,21 +185,25 @@ class BibleGatewayScraper:
                 for attr, value in tag["attrs"].items():
                     if not html_tag.attrs.get(attr): continue
 
+                    if "changeAttrWildcard" in tag["actions"] and "(.*)" in value:
+                        wildcard_re = re.search(rf"{value}", ' '.join(html_tag.attrs[attr]), re.I)
+
+                        if wildcard_re:
+                            tag_found, wildcard = True, wildcard_re.group(1)
+                        
+                            for new_attr, new_value in tag["attrsToChange"].items():
+                                html_tag.attrs[new_attr] = new_value.format(wildcard)
+
                     for val in value.split(" "):
                         found = False
-
-                        if "changeAttrWildcard" in tag["actions"] and "(.*)" in val:
-                            if re.search(rf"{val}", ' '.join(html_tag.attrs[attr]), re.I):
-                                wildcard = re.search(rf"{val}", ' '.join(html_tag.attrs[attr]), re.I).group(1)
-                            
-                                for new_attr, new_value in tag["attrsToChange"].items():
-                                    html_tag.attrs[new_attr] = new_value.format(wildcard)
 
                         found = True if  val in html_tag.attrs[attr] else found
 
                         if not found: break
                                                 
                 if found: 
+                    tag_found = True
+                    
                     if "remove" in tag["actions"]:
                         html_tag.decompose()
 
